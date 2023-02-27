@@ -42,4 +42,4 @@ st.table(features_df)
 
 if st.button('Predict'):
         result = predict(np.array([loan_amnt, term, emp_length, annual_inc, dti, delinq_2yrs, open_acc, mort_acc, pub_rec_bankruptcies, last_fico_range_high]))
-        st.text(prediction[0])
+        st.text(result[0])
